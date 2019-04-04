@@ -186,11 +186,11 @@ public class PictureImageGridAdapter extends RecyclerView.Adapter<RecyclerView.V
                 contentHolder.iv_picture.setImageResource(R.drawable.audio_placeholder);
             } else {
                 RequestOptions options = new RequestOptions();
-                if (overrideWidth <= 0 && overrideHeight <= 0) {
-                    options.sizeMultiplier(sizeMultiplier);
-                } else {
-                    options.override(overrideWidth, overrideHeight);
-                }
+//                if (overrideWidth <= 0 && overrideHeight <= 0) {
+//                    options.sizeMultiplier(sizeMultiplier);
+//                } else {
+//                    options.override(overrideWidth, overrideHeight);
+//                }
                 options.diskCacheStrategy(DiskCacheStrategy.ALL);
                 options.centerCrop();
                 options.placeholder(R.drawable.image_placeholder);
