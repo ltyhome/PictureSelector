@@ -82,11 +82,6 @@ public class PictureBaseActivity extends FragmentActivity {
     }
 
     @Override
-    public Lifecycle getLifecycle() {
-        return super.getLifecycle();
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (savedInstanceState != null) {
             config = savedInstanceState.getParcelable(PictureConfig.EXTRA_CONFIG);
